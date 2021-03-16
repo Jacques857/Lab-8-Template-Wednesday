@@ -93,4 +93,11 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+
+    @Test
+    void testCityFirstLetter() {
+        City city = new City("Edmonton", "AB");
+
+        assertEquals(city.getFirstLetter(), "E");
+    }
 }
