@@ -18,7 +18,7 @@ public class City implements Comparable<City>{
     }
 
     String getFirstLetter(){
-        return null;
+        return this.city.substring(0, 1);
     }
 
     @Override
