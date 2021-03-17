@@ -17,6 +17,10 @@ public class City implements Comparable<City>{
         return this.province;
     }
 
+    String getFirstLetter(){
+        return this.city.substring(0, 1);
+    }
+
     @Override
     public int compareTo(City o) {
         return city.compareTo(o.getCityName());
